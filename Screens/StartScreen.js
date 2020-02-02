@@ -8,9 +8,9 @@ export default class StartScreen extends React.Component {
     render(){
         var {navigate} = this.props.navigation;
         return(
-            <View style={styles.container1}>
+            <View style={styles.container}>
                 <View
-                    style={styles.container1}
+                    style={styles.container}
                     contentContainerStyle={styles.contentContainer}>
                     <View style={styles.welcomeContainer}>
                     <Image
@@ -39,7 +39,7 @@ export default class StartScreen extends React.Component {
 };
 
 const styles = StyleSheet.create({
-    container1: {
+    container: {
       flex: 1,
       backgroundColor: '#fff',
     },
