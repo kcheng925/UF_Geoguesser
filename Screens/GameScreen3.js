@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View, Image, StyleSheet} from 'react-native';
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
-let correct = "Turlington";
+let correct = "Marston";
 
 export default class GameScreen extends React.Component{
     
@@ -42,8 +42,8 @@ export default class GameScreen extends React.Component{
                     <Text style = {styles.answerText}>Answer</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => navigate("Game2", {
-                      sourceImg: require('../assets/images/reitz.jpg')
+                <TouchableOpacity onPress={() => navigate("Start", {
+                      sourceImg: require('../assets/images/marston.jpg')
                       })} style = {styles.answerButton}>
                         <Text style={styles.answerText}>Next</Text>
                     </TouchableOpacity>
@@ -65,7 +65,9 @@ const styles = StyleSheet.create({
         flex: 2
     },
     picture:{
-        alignItems: 'center'
+        alignItems: 'center',
+        width: 500,
+        height: 375
     },
     input:{
         margin: 15,

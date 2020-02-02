@@ -1,26 +1,19 @@
 import React from 'react';
 import {Text, View, Image, StyleSheet} from 'react-native';
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
-let correct = "Turlington";
 
 export default class GameScreen extends React.Component{
-    
-    
+    static navigationOptions = {
+        title: 'Game Screen',
+    };
     handleAnswer = (text) => {
         this.setState({answer: text})
     }
     answerBox = (answer) => {
-        if (answer == correct){
-            alert('Correct!');
-        }
-        else {
-            alert('Incorrect!')
-        }
+        alert('You are maybe correct?!')
     }
-    
 
     render(){
-        var {navigate} = this.props.navigation;
         return([
             <View style = {styles.container1}>
                 <Image
@@ -41,14 +34,6 @@ export default class GameScreen extends React.Component{
                     }>
                     <Text style = {styles.answerText}>Answer</Text>
                 </TouchableOpacity>
-
-                <TouchableOpacity onPress={() => navigate("Game2", {
-                      sourceImg: require('../assets/images/reitz.jpg')
-                      })} style = {styles.answerButton}>
-                        <Text style={styles.answerText}>Next</Text>
-                    </TouchableOpacity>
-
-                
             </View>
         ]);
     }
@@ -60,7 +45,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#000"
     },
     container2:{
-        marginTop: 250,
+        marginTop: 325,
         alignItems: 'center',
         flex: 2
     },
@@ -86,5 +71,5 @@ const styles = StyleSheet.create({
         textAlign: 'center', 
         fontSize: 15, 
         color: '#FCB209'
-    },
+    }
 });
