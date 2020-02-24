@@ -10,10 +10,10 @@ For now we use Firebase to store pictues of places around campus and insert them
 
 # Example Screenshots
 WIP Home Screen
-![Alt Text](https://photos.google.com/photo/AF1QipNfMy3rZ4O3f00OBc7Fs3-VVgScUcRriHz04o-R)
+![Home Screen](https://imgur.com/a/JnSmIGJ)
 
 Example Level
-![Alt Text](https://photos.google.com/photo/AF1QipMUOy_9qaJNrMI1sYh3urWx9pFo9qtVLa1vfCnR)
+![EX Level](https://imgur.com/a/TpZr9N7)
 
 
 Built with React-Native and Firebase.
